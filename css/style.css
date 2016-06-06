@@ -1,71 +1,228 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* MENU */
+
+nav ul a,
+nav .brand-logo {
+  color: #4DB6AC;
+  font-weight: 400;
+}
+
+nav ul a {
+  border-bottom: 6px solid transparent;
+  text-transform: uppercase;
+  color: #727272;
+  height: 64px;
+  transition: all 0.3s ease-out;
+  font-size: 15px;
+}
+
+nav ul a:hover {
+  border-bottom-color: #4DB6AC;
+  background-color: transparent;
+}
+
+.parallax-container {
+  overflow: visible;
+}
+
+/* BANNIERE */
 
 #index-banner {
   background-color: #26a69a;
 }
 
+/* PROFIL */
+
 .container {
   width: 85% !important;
 }
 
-section.about {
+.container section#about {
   position: relative;
   background-color: #fff;
   margin-top: -200px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 5px 15px;
+  margin-bottom: 20px;
 }
+
+.profil-about {
+  text-align: center;
+}
+
+.profil-about p {
+  text-align: justify;
+}
+
+h5.profile-job {
+  font-size: 16px;
+  color: #828282;
+  margin-top: -2px;
+    font-weight: 300;
+}
+
+.container section#about .profil-img {
+  padding: 5px;
+}
+
+.container section#about .profile-list li .title {
+  width: 125px;
+  display: inline-block;
+}
+section#about .profile-list li {
+  margin-bottom: 10px;
+}
+
+.profile-title {
+  font-weight: 300;
+  text-align: left;
+}
+
+.profile-title span {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+/* SOCIAL */
 
 .profile-social {
   height: 60px;
   background-color: #26A69A;
-  padding: 15px 0;
 }
 
-.social {
+.profile-social .social {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
-.social li {
+.profile-social .social li {
   display: inline-block;
-  margin: 5px 15px;
+  margin: 0px 50px;
 }
 
-.social li a {
-  width: 35px;
-  height: 35px;
+.profile-social .social li a {
   color: #fff;
 }
 
-.profile-list li .title {
-  width: 125px;
-  display: inline-block;
+/* SKILLS */
+
+#skill-slider {
+  overflow: hidden;
+  width: 640px;
+  margin: auto;
 }
 
-nav ul a,
-nav .brand-logo {
-  color: #4DB6AC;
-  font-weight: 500;
+.skill-item {
+  float: left;
+  -webkit-transform: translate3d(0,0,0);
 }
 
-nav ul a {
-  line-height: 60px;
-  border-bottom: 2px solid transparent;
-  transition: border-color .3s;
+.single-skill {
+  height: 490px;
+  width: 60px;
+  position: relative;
 }
 
-nav ul a:hover {
-  border-bottom: 2px solid #4DB6AC;
-  background-color: transparent;
+.after-li {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  height: 350px;
+  text-align: center;
 }
+
+.singel-hr {
+  position: relative;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.singel-hr-inner {
+  height: 100%;
+  background-color: #00bcd4;
+  position: absolute;
+  width: 100%;
+  bottom: 33px;
+  border-radius: 2px;
+  height: 0px;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.skill-visiable {
+  position: relative;
+}
+
+.skill-title {
+  color: #00bcd4;
+  top: -100px;
+  font-size: 13px;
+  line-height: 15px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+}
+
+.hr-wrap {
+  background-color: #00bcd4;
+  height: 73px;
+  width: 1px;
+  position: absolute;
+  top: -73px;
+  left: 50%;
+}
+
+.hrc:after {
+  background-color: #00bcd4;
+  content: '';
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: -3px;
+}
+
+.skill-count {
+  color: #00bcd4;
+  bottom: 0;
+}
+
+
+#education {
+  background: url('/images/home-concept.png') #f4f4f4;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px;
+    background-origin: content-box;
+}
+
+#education .row {
+
+}
+
+.education-title {
+  font-family: 'Satisfy', cursive;
+  position: absolute;
+  bottom: 0;
+}
+
+.circle-dashed {
+  border: 1px #000;
+  border-style: dashed;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  margin: 100px auto;
+}
+
+
 
 
 p {
