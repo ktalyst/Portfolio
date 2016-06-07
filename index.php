@@ -16,12 +16,12 @@
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo">Portfolio</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#profile">A propos</a></li>
+                <li><a href="#about">A propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#education">Formations</a></li>
                 <li><a href="#experience">Expérience</a></li>
-                <li><a href="#">Calendrier</a></li>
-                <li><a href="#">Me contacter</a></li>
+                <li><a href="#calendar">Calendrier</a></li>
+                <li><a href="#contact">Me contacter</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
@@ -96,6 +96,7 @@
             </div>
         </section>
     </div>
+
     <div class="row">
         <div class="profile-social">
             <ul class="social">
@@ -107,10 +108,11 @@
             </ul>
         </div>
     </div>
-    <div class="container">
-          <!--   SKILLS Section   -->
-        <section id="skills" class="section scrollspy">
+
+    <section id="skills" class="section scrollspy">
+        <div class="container">
             <div class="row">
+                <h5 class="teal-text text-lighten-1 center">Compétences</h5>
                 <div class="skill-right">
                     <div id="skill-slider" class="clearfix">
                         <div class="skill-item" style="width: 91px;">
@@ -153,7 +155,7 @@
                                     <div class="singel-hr">
                                         <div class="singel-hr-inner" data-height="75%">
                                             <div class="skill-visiable">
-                                                <span class="skill-title">Javascript/JQuery</span>
+                                                <span class="skill-title" style="top: -130px;">Javascript</br>JQuery</span>
                                                 <div class="hr-wrap">
                                                     <div class="hrc"></div>
                                                 </div>
@@ -187,7 +189,7 @@
                                     <div class="singel-hr">
                                         <div class="singel-hr-inner" data-height="70%">
                                             <div class="skill-visiable">
-                                                <span class="skill-title">Maquettage Web/Intégration</span>
+                                                <span class="skill-title" style="top: -130px;">Maquettage </br>Intégration Web</span>
                                                 <div class="hr-wrap">
                                                     <div class="hrc"></div>
                                                 </div>
@@ -235,65 +237,68 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-        <section id="education" class="section scrollspy">
-            <div class="row">
-                <div class="col s3 offset-s1" style="position: relative;">
-                    <div class="circle-dashed" style="margin-top: 54%;">
-                    </div>
-                    <div class="education-title">
-                        <strong>Baccalauréat S</strong>
-                        <p class="blue-text">Lycée Paul Héroult, St Jean de Mnne</p>
-                    </div>
-                </div>
-                <div class="col s3" style="position: relative;">
-                    <div class="circle-dashed" style="margin-top: 46%;">
-                    </div>
-                    <div class="education-title">
-                        <strong>Licence Informatique</strong>
-                        <p class="blue-text">Université Montpellier 2</p>
-                    </div>
-                </div>
-                <div class="col s3" style="position: relative;">
-                    <div class="circle-dashed" style="margin-top: 35%;">
-                    </div>
-                    <div class="education-title">
-                        <strong>Master 1 Développement Logiciel</strong>
-                        <p class="blue-text">Université Toulouse 3</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+    <section id="education" class="section scrollspy">
+        <div class="row">
+            <h5 class="white-text center">Formations</h5>
+            <div class="col s9 offset-s2">
+                <ul class="timeline">
+                    <li class="event" data-date="2013/2014">
+                        <h3>Master 1 Développement Logiciel</h3>
+                        <p>Université Toulouse 3</p>
+                    </li>
+                    <li class="event" data-date="2009/2012">
+                        <h3>Licence Informatique</h3>
+                        <p>Université Montpellier 2</p>
+                    </li>
+                    <li class="event" data-date="2008">
+                        <h3>Baccalauréat</h3>
+                        <p>Lycée Paul Héroult, St Jean de Mnne</p>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
         <section id="experience" class="section scrollspy">
             <div class="row">
+                <h5 class="teal-text text-lighten-1 center">Expériences</h5>
                 <div class="col s10 offset-s1">
-                    <div class="col s4 offset-s2">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/matooma-logo.jpg">
+                    <div class="col s5 offset-s1">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/matooma-logo.jpg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Matooma, Montpellier, France</span>
+                                <span class="card-title activator">Matooma, Montpellier, France<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <p class="teal-text text-lighten-1">Octobre 2014 - aujourd'hui</p>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Ingénieur Etudes et Développement<i class="material-icons right">close</i></span>
                                 <p>Développement et maintenance de la plateforme M2MManager en proposant et mettant en œuvre les choix techniques d’évolution.<br>
                                 Participation à la mise en place de process de gestion de projet inspirés des méthodes agiles.<br>
                                 Production de maquettes graphiques et intégration Web.<br>
                                 Développement d'un CRM en interne basé sur OroCRM.<br>
                                 Développement d'Api pour permettre au frontend de communiquer avec notre CRM.</p>
                             </div>
-                            <div class="card-action">
-                                <a href="#">Octobre 2014 - aujourd'hui</a>
-                            </div>
                         </div>
                     </div>
-                    <div class="col s4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/sopra.jpeg">
+                    <div class="col s5">
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/sopra.png" style="width: 210px; margin: auto;">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Steria, Toulouse, France</span>
+                                <span class="card-title activator">Steria, Toulouse, France<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <p class="teal-text text-lighten-1">Mai 2014 - Aout 2014</p>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Stage<i class="material-icons right">close</i></span>
                                 <p>Développement d'une application web de gestion des charges d'un projet.<br>
                                 Identification des besoins du client pour lui proposer un produit en adéquation avec ses besoins.<br>
                                 Développement en mode Agile.<br>
@@ -301,58 +306,115 @@
                                 Découverte de l'ergonomie Web.<br>
                                 Apprentissage en autodidacte.</p>
                             </div>
-                            <div class="card-action">
-                                <a href="#">Mai 2014 - Aout 2014</a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        <section id="calendar" class="section scrollspy">
+            <h5 class="white-text center">Disponibilité</h5>
+            <div class="calendar-dispo">
+                <div class="calendar-cont">
+                    <div class="calendar-header">
+                        <div class="calendar-nav">
+                            <span class="active-date"><span class="active-month"></span><span class="active-year"></span></span>
+                            <a class="calendar-prev ripple-centered" title="Prev"><i class="zmdi zmdi-chevron-left"></i></a>
+                            <a class="calendar-next ripple-centered" title="Next"><i class="zmdi zmdi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <table class="calendar-body">
+                        <thead class="calendar-thead"></thead>
+                        <tbody class="calendar-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
+        <section id="contact" class="section scrollspy">
+            <div class="container">
+                <h5 class="teal-text text-lighten-1 center">Contact</h5>
+                <div class="row">
+                    <div class="contact-inner">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="clearfix">
+                                    <div class="col s12">
+                                        <ul class="clearfix contact-info">
+                                            <li>Lotissement les Crêts, 74140 Massongy</li>
+                                            <li><a href="">+33 652 34 35 57</a></li>
+                                            <li><a href="">jnroudet@gmail.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="col s7">
+                                        <div class="map-wrapper">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88248.72703303394!2d6.22154334632954!3d46.27462090003929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6a4eca7d794f%3A0xda285a27d8205b72!2sLotissement+les+Cr%C3%AAts%2C+74140+Massongy!5e0!3m2!1sfr!2sfr!4v1465305533669" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
 
+                                    <div class="col s5">
+                                        <div class="card-panel">
+                                            <form action="#" id="contactForm" novalidate="">
+                                                <div class="input-field col s12">
+                                                    <input id="contact_name" type="text" name="contactName" class="validate">
+                                                    <label for="contact_name">Nom</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <input id="email" type="email" name="contactEmail" class="validate">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <input id="subject" type="text" name="contactSubject" class="validate">
+                                                    <label for="subject">Sujet</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <textarea id="textarea1" name="contactMessage" class="materialize-textarea"></textarea>
+                                                    <label for="textarea1">Message</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <button type="submit" class="waves-effect waves-light btn">Envoyer</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <a class="btn btn-floating waves-effect waves-light back-to-top animatescroll-link" href="#about">
+                        <span class="fa fa-angle-up"></span>
+                    </a>
+                    <div class="social-links">
+                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-facebook"></span></a>
+                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-twitter"></span></a>
+                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-google-plus"></span></a>
+                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-linkedin"></span></a>
+                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-github"></span></a>
+                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-skype"></span></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
+    </footer>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
     <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+
             $('.scrollspy').scrollSpy();
             $('#skills').waypoint({
                 handler: function(event, direction) {
