@@ -37,10 +37,8 @@
     </nav>
     </div>
 
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-            </div>
+    <div id="index-banner">
+        <div class="parallax-container">
         </div>
     </div>
 
@@ -52,7 +50,7 @@
                     <div class="col s4">
                         <div class="profil-about">
                             <h5 class="profile-title"><span class="teal-text"> A propos</span></h5>
-                            <p> Hello, je suis une développeuse passionnée, front et back, diplomée d'un Master 1 Développement Logiciel, de l'Université de Toulouse. <br>
+                            <p class="text-light"> Hello, je suis une développeuse passionnée, front et back, diplomée d'un Master 1 Développement Logiciel, de l'Université de Toulouse. <br>
                              Mon livre de chevet n'est autre que "PHP5 avancé"​ avec seulement 850 pages... <br>
                              Et quand je suis bloquée sur un bug, je vais me chanegr les idées grâce à la photo et l'escalade ! </p>
                             <a class="waves-effect btn"><i class="zmdi zmdi-download left"></i> Télécharger CV</a>
@@ -71,23 +69,23 @@
                             <ul class="profile-list">
                                 <li class="clearfix">
                                     <strong class="title">Age</strong>
-                                    <span class="text-right">26</span>
+                                    <span class="text-right text-light">26</span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Adresse</strong>
-                                    <span class="text-right">74140 Massongy</span>
+                                    <span class="text-right text-light">74140 Massongy</span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">E-mail</strong>
-                                    <span class="text-right"><a href="mailto:jnroudet@gmail.com">jnroudet@gmail.com</a></span>
+                                    <span class="text-right text-light"><a href="mailto:jnroudet@gmail.com">jnroudet@gmail.com</a></span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Téléphone</strong>
-                                    <span class="text-right"><a href="tel:+33652343557">+33 6 52 34 35 57</a></span>
+                                    <span class="text-right text-light"><a href="tel:+33652343557">+33 6 52 34 35 57</a></span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Situation</strong>
-                                    <span class="text-right">Célibataire</span>
+                                    <span class="text-right text-light">Célibataire</span>
                                 </li>
                             </ul>
                         </div>
@@ -97,19 +95,20 @@
         </section>
     </div>
 
-    <div class="row">
+    <div class="row" style="margin-bottom: 0px;">
         <div class="profile-social">
             <ul class="social">
-                <li><a class="btn-floating btn-flat btn-large waves-effect waves-light" href="https://twitter.com" target="_blank"><i class="zmdi zmdi-twitter zmdi-hc-lg"></i></a></li>
-                <li><a class="btn-floating btn-flat btn-large waves-effect waves-light" href="https://www.linkedin.com" target="_blank"><i class="zmdi zmdi-linkedin zmdi-hc-lg"></i></a></li>
-                <li><a class="btn-floating btn-flat btn-large waves-effect waves-light" href="https://www.viadeo.com" target="_blank"><i class="fa fa-viadeo fa-lg" aria-hidden="true"></i></a></li>
-                <li><a class="btn-floating btn-flat btn-large waves-effect waves-light" href="https://www.flikr.com" target="_blank"><i class="zmdi zmdi-flickr zmdi-hc-lg"></i></a></li>
-                <li><a class="btn-floating btn-flat btn-large waves-effect waves-light" href="https://www.github.com" target="_blank"><i class="zmdi zmdi-github-alt zmdi-hc-lg"></i></a></li>
+                <li><a class="btn-floating btn-flat waves-effect waves-light" href="https://twitter.com/JenniferRoudet1" target="_blank"><i class="zmdi zmdi-twitter zmdi-hc-lg"></i></a></li>
+                <li><a class="btn-floating btn-flat waves-effect waves-light" href="https://www.linkedin.com/in/jennifer-buisson-roudet-14751645" target="_blank"><i class="zmdi zmdi-linkedin zmdi-hc-lg"></i></a></li>
+                <li><a class="btn-floating btn-flat waves-effect waves-light" href="http://www.viadeo.com/p/0021uu8osies1u2w" target="_blank"><i class="fa fa-viadeo fa-lg" aria-hidden="true"></i></a></li>
+                <li><a class="btn-floating btn-flat waves-effect waves-light" href="http://flickr.com/photos/jnroudet/" target="_blank"><i class="zmdi zmdi-flickr zmdi-hc-lg"></i></a></li>
+                <li><a class="btn-floating btn-flat waves-effect waves-light" href="https://github.com/ktalyst" target="_blank"><i class="zmdi zmdi-github-alt zmdi-hc-lg"></i></a></li>
             </ul>
         </div>
     </div>
 
     <section id="skills" class="section scrollspy">
+        <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <h5 class="teal-text text-lighten-1 center">Compétences</h5>
@@ -268,7 +267,7 @@
                     <div class="col s5 offset-s1">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="images/matooma-logo.jpg">
+                                <img class="activator" src="images/matooma-logo.jpg" style="width: 90%; margin: 20px auto;">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator">Matooma, Montpellier, France<i class="material-icons right">more_vert</i></span>
@@ -373,8 +372,8 @@
                                                     <textarea id="textarea1" name="contactMessage" class="materialize-textarea"></textarea>
                                                     <label for="textarea1">Message</label>
                                                 </div>
-                                                <div class="input-field col s12">
-                                                    <button type="submit" class="waves-effect waves-light btn">Envoyer</button>
+                                                <div class="input-field col s10 offset-s1">
+                                                      <button type="submit" class="col s6 offset-s3 waves-effect waves-light btn">Envoyer</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -394,14 +393,7 @@
                     <a class="btn btn-floating waves-effect waves-light back-to-top animatescroll-link" href="#about">
                         <span class="fa fa-angle-up"></span>
                     </a>
-                    <div class="social-links">
-                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-facebook"></span></a>
-                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-twitter"></span></a>
-                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-google-plus"></span></a>
-                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-linkedin"></span></a>
-                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-github"></span></a>
-                        <a class="waves-effect waves-light" href="#0"><span class="fa fa-skype"></span></a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -421,6 +413,34 @@
                     $('#skills').find('.singel-hr-inner').each(function(){
                         var height = $(this).data('height');
                         $(this).css('height', height);
+                    });
+                },
+                offset: 'bottom-in-view'
+            });
+            $('#education').waypoint({
+                handler: function(event, direction) {
+                    $('#education').find('.timeline').each(function(){
+
+                        var time = 0;
+
+                        $(this).find('li').each(function() {
+                            $(this).css('opacity', 1);
+                            $(this).css('transform', 'translateX(0)');
+                            // $(this).velocity(
+                            // { opacity: "1", translateX: "0" },
+                            // { duration: 800, delay: time, easing: [60, 10] });
+                            $(this).css('transition-delay', time+'s');
+                            time += 1;
+                        });
+
+                    });
+                },
+                offset: 'bottom-in-view'
+            });
+            $('#experience').waypoint({
+                handler: function(event, direction) {
+                    $('#experience').find('.s5').each(function(){
+                        $(this).css('transform', 'translateX(0)');
                     });
                 },
                 offset: 'bottom-in-view'
