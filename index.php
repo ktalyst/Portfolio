@@ -11,31 +11,31 @@
     </head>
 
     <body>
-    <div class="navbar-fixed">
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">Portfolio</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#about">A propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#education">Formations</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#calendar">Calendrier</a></li>
-                <li><a href="#contact">Me contacter</a></li>
-            </ul>
+        <!-- <div class="navbar-fixed"> -->
+            <nav class="white" role="navigation">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="#" class="brand-logo">Portfolio</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#education">Formations</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#calendar">Calendrier</a></li>
+                        <li><a href="#contact">Me contacter</a></li>
+                    </ul>
 
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Formations</a></li>
-                <li><a href="#">Expérience</a></li>
-                <li><a href="#">Calendrier</a></li>
-                <li><a href="#">Me contacter</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-    </div>
+                    <ul id="nav-mobile" class="side-nav">
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#education">Formations</a></li>
+                        <li><a href="#exxperience">Expérience</a></li>
+                        <li><a href="#calendar">Calendrier</a></li>
+                        <li><a href="#contact">Me contacter</a></li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        <!-- </div> -->
 
     <div id="index-banner">
         <div class="parallax-container">
@@ -47,21 +47,20 @@
         <section id="about" class="section scrollspy">
             <div class="row">
                 <div class="profile">
-                    <div class="col s4">
+                    <div class="col s12 m12 l4 push-l4">
+                        <div class="profil-img">
+                            <img src="images/profil.jpg" alt="" style="width:100%;">
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 pull-l4">
                         <div class="profil-about">
                             <h5 class="profile-title"><span class="teal-text"> A propos</span></h5>
                             <p class="text-light"> Hello, je suis une développeuse passionnée, front et back, diplomée d'un Master 1 Développement Logiciel, de l'Université de Toulouse. <br>
                              Mon livre de chevet n'est autre que "PHP5 avancé"​ avec seulement 850 pages... <br>
                              Et quand je suis bloquée sur un bug, je vais me chanegr les idées grâce à la photo et l'escalade ! </p>
-                            <a class="waves-effect btn"><i class="zmdi zmdi-download left"></i> Télécharger CV</a>
                         </div>
                     </div>
-                    <div class="col s4">
-                        <div class="profil-img">
-                            <img src="images/profil.jpg" alt="" style="width:100%;">
-                        </div>
-                    </div>
-                    <div class="col s4">
+                    <div class="col s12 m6 l4">
                         <div class="profile-info">
                             <h5 class="profile-title">Je suis<span class="teal-text"> Jennifer Buisson</span></h5>
                             <h5 class="profile-job">Développeuse full-stack</h5>
@@ -90,6 +89,10 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="col s12">
+                        <a class="waves-effect btn" style="width:100%;"><i class="zmdi zmdi-download left"></i> Télécharger CV</a>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -98,11 +101,11 @@
     <div class="row" style="margin-bottom: 0px;">
         <div class="profile-social">
             <ul class="social">
-                <li><a class="btn-floating btn-flat waves-effect waves-light" href="https://twitter.com/JenniferRoudet1" target="_blank"><i class="zmdi zmdi-twitter zmdi-hc-lg"></i></a></li>
-                <li><a class="btn-floating btn-flat waves-effect waves-light" href="https://www.linkedin.com/in/jennifer-buisson-roudet-14751645" target="_blank"><i class="zmdi zmdi-linkedin zmdi-hc-lg"></i></a></li>
-                <li><a class="btn-floating btn-flat waves-effect waves-light" href="http://www.viadeo.com/p/0021uu8osies1u2w" target="_blank"><i class="fa fa-viadeo fa-lg" aria-hidden="true"></i></a></li>
-                <li><a class="btn-floating btn-flat waves-effect waves-light" href="http://flickr.com/photos/jnroudet/" target="_blank"><i class="zmdi zmdi-flickr zmdi-hc-lg"></i></a></li>
-                <li><a class="btn-floating btn-flat waves-effect waves-light" href="https://github.com/ktalyst" target="_blank"><i class="zmdi zmdi-github-alt zmdi-hc-lg"></i></a></li>
+                <li class="col s2 offset-s1"><a class="btn-floating btn-flat waves-effect waves-light" href="https://twitter.com/JenniferRoudet1" target="_blank"><i class="zmdi zmdi-twitter zmdi-hc-lg"></i></a></li>
+                <li class="col s2"><a class="btn-floating btn-flat waves-effect waves-light" href="https://www.linkedin.com/in/jennifer-buisson-roudet-14751645" target="_blank"><i class="zmdi zmdi-linkedin zmdi-hc-lg"></i></a></li>
+                <li class="col s2"><a class="btn-floating btn-flat waves-effect waves-light" href="http://www.viadeo.com/p/0021uu8osies1u2w" target="_blank"><i class="fa fa-viadeo fa-lg" aria-hidden="true"></i></a></li>
+                <li class="col s2"><a class="btn-floating btn-flat waves-effect waves-light" href="http://flickr.com/photos/jnroudet/" target="_blank"><i class="zmdi zmdi-flickr zmdi-hc-lg"></i></a></li>
+                <li class="col s2"><a class="btn-floating btn-flat waves-effect waves-light" href="https://github.com/ktalyst" target="_blank"><i class="zmdi zmdi-github-alt zmdi-hc-lg"></i></a></li>
             </ul>
         </div>
     </div>
@@ -112,9 +115,9 @@
         <div class="container">
             <div class="row">
                 <h5 class="teal-text text-lighten-1 center">Compétences</h5>
-                <div class="skill-right">
+                <div class="skill-right col s12 m10 l8 push-m1 push-l2">
                     <div id="skill-slider" class="clearfix">
-                        <div class="skill-item" style="width: 91px;">
+                        <div class="skill-item" style="width: 14%;">
                             <div class="single-skill">
                                 <div class="after-li">
                                     <div class="singel-hr">
@@ -131,7 +134,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" style="width: 91px;">
+                        <div class="skill-item" style="width: 14%;">
                             <div class="single-skill">
                                 <div class="after-li">
                                     <div class="singel-hr">
@@ -148,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" style="width: 91px;">
+                        <div class="skill-item" style="width: 14%;">
                             <div class="single-skill">
                                 <div class="after-li">
                                     <div class="singel-hr">
@@ -165,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" style="width: 91px;">
+                        <div class="skill-item" style="width: 14%;">
                             <div class="single-skill">
                                 <div class="after-li">
                                     <div class="singel-hr">
@@ -182,7 +185,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" style="width: 91px;">
+                        <div class="skill-item" style="width: 14%;">
                             <div class="single-skill">
                                 <div class="after-li">
                                     <div class="singel-hr">
@@ -199,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" style="width: 91px;">
+                        <div class="skill-item" style="width: 14%;">
                             <div class="single-skill">
                                 <div class="after-li">
                                     <div class="singel-hr">
@@ -216,7 +219,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item" style="width: 91px;">
+                        <div class="skill-item" style="width: 14%;">
                             <div class="single-skill">
                                 <div class="after-li">
                                     <div class="singel-hr">
@@ -263,8 +266,8 @@
         <section id="experience" class="section scrollspy">
             <div class="row">
                 <h5 class="teal-text text-lighten-1 center">Expériences</h5>
-                <div class="col s10 offset-s1">
-                    <div class="col s5 offset-s1">
+                <div class="col s12 m10 l10 offset-m1 offset-l1">
+                    <div class="col s12 m6 l6">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="images/matooma-logo.jpg" style="width: 90%; margin: 20px auto;">
@@ -285,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s5">
+                    <div class="col s12 m6 l6">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="images/sopra.png" style="width: 210px; margin: auto;">
@@ -347,13 +350,13 @@
                                     </div>
                                 </div>
                                 <div class="clearfix">
-                                    <div class="col s7">
+                                    <div class="col s12 m7 l7">
                                         <div class="map-wrapper">
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88248.72703303394!2d6.22154334632954!3d46.27462090003929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6a4eca7d794f%3A0xda285a27d8205b72!2sLotissement+les+Cr%C3%AAts%2C+74140+Massongy!5e0!3m2!1sfr!2sfr!4v1465305533669" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                         </div>
                                     </div>
 
-                                    <div class="col s5">
+                                    <div class="col s12 m5 l5">
                                         <div class="card-panel">
                                             <form action="#" id="contactForm" novalidate="">
                                                 <div class="input-field col s12">
@@ -406,7 +409,7 @@
     <script type="text/javascript" src="js/calendar.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-
+            $(".button-collapse").sideNav();
             $('.scrollspy').scrollSpy();
             $('#skills').waypoint({
                 handler: function(event, direction) {
