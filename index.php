@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,7 +14,6 @@
     </head>
 
     <body>
-        <!-- <div class="navbar-fixed"> -->
             <nav class="white" role="navigation">
                 <div class="nav-wrapper container">
                     <a id="logo-container" href="#" class="brand-logo">Portfolio</a>
@@ -35,7 +37,6 @@
                     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 </div>
             </nav>
-        <!-- </div> -->
 
     <div id="index-banner">
         <div class="parallax-container">
@@ -80,7 +81,7 @@
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Téléphone</strong>
-                                    <span class="text-right text-light"><a href="tel:+33652343557">+33 6 52 34 35 57</a></span>
+                                    <span class="text-right text-light"><a href="tel:+33652343557">+33 6 59 93 77 13</a></span>
                                 </li>
                                 <li class="clearfix">
                                     <strong class="title">Situation</strong>
@@ -90,7 +91,7 @@
                         </div>
                     </div>
                     <div class="col s12">
-                        <a class="waves-effect btn" style="width:100%;"><i class="zmdi zmdi-download left"></i> Télécharger CV</a>
+                        <a href="files/Resume_2016.pdf" class="waves-effect btn" style="width:100%;" download><i class="zmdi zmdi-download left"></i> Télécharger CV</a>
 
                     </div>
                 </div>
@@ -114,7 +115,7 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <h5 class="teal-text text-lighten-1 center">Compétences</h5>
+                <h5 class="teal-text text-lighten-1 center" style="position: relative;">Compétences</h5>
                 <div class="skill-right col s12 m10 l8 push-m1 push-l2">
                     <div id="skill-slider" class="clearfix">
                         <div class="skill-item" style="width: 14%;">
@@ -267,7 +268,7 @@
             <div class="row">
                 <h5 class="teal-text text-lighten-1 center">Expériences</h5>
                 <div class="col s12 m10 l10 offset-m1 offset-l1">
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m6 l6 block_exp">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="images/matooma-logo.jpg" style="width: 90%; margin: 20px auto;">
@@ -288,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m6 l6 block_exp">
                         <div class="card small">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="images/sopra.png" style="width: 210px; margin: auto;">
@@ -344,7 +345,7 @@
                                     <div class="col s12">
                                         <ul class="clearfix contact-info">
                                             <li>Lotissement les Crêts, 74140 Massongy</li>
-                                            <li><a href="">+33 652 34 35 57</a></li>
+                                            <li><a href="">+33 659 93 77 13</a></li>
                                             <li><a href="">jnroudet@gmail.com</a></li>
                                         </ul>
                                     </div>
@@ -357,8 +358,37 @@
                                     </div>
 
                                     <div class="col s12 m5 l5">
-                                        <div class="card-panel">
-                                            <form action="#" id="contactForm" novalidate="">
+                                        <div class="card-panel" style="overflow: hidden;">
+                                            <?php if(array_key_exists('errors',$_SESSION)): ?>
+                                                <div class="col s12">
+                                                    <div id="alert" class="card-panel red darken-1" style="overflow: hidden;">
+                                                        <div class="col s10">
+                                                            <div class=" white-text">
+                                                            <?= implode('<br>', $_SESSION['errors']); ?>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col s2">
+                                                            <a href="#contact" class="white-text close"><i class="material-icons">clear</i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            <?php endif; ?>
+                                            <?php if(array_key_exists('success',$_SESSION)): ?>
+                                                <div class="col s12">
+                                                    <div id="alert" class="card-panel green darken-1" style="overflow: hidden;">
+                                                        <div class="col s10">
+                                                            <div class=" white-text">
+                                                            Votre email a bien été transmis !
+                                                            </div>
+                                                        </div>
+                                                        <div class="col s2">
+                                                            <a href="#contact" class="white-text close"><i class="material-icons">clear</i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                            <div class="col s12">
+                                            <form action="send.php" id="contactForm" novalidate="" method="post">
                                                 <div class="input-field col s12">
                                                     <input id="contact_name" type="text" name="contactName" class="validate">
                                                     <label for="contact_name">Nom</label>
@@ -380,6 +410,7 @@
                                                 </div>
                                             </div>
                                         </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -396,10 +427,14 @@
                     <a class="btn btn-floating waves-effect waves-light back-to-top animatescroll-link" href="#about">
                         <span class="fa fa-angle-up"></span>
                     </a>
-
                 </div>
             </div>
         </div>
+            <div class="footer-copyright">
+                <div class="container">© 2016 jnroudet.com
+                    <a target="_blank" class="grey-text text-lighten-4 right" href="http://materializecss.com/">Code with Materialize</a>
+                </div>
+            </div>
     </footer>
 
     <!--Import jQuery before materialize.js-->
@@ -442,13 +477,21 @@
             });
             $('#experience').waypoint({
                 handler: function(event, direction) {
-                    $('#experience').find('.s5').each(function(){
+                    $('#experience').find('.block_exp').each(function(){
                         $(this).css('transform', 'translateX(0)');
                     });
                 },
                 offset: 'bottom-in-view'
             });
         });
+        $('.close').click(function(e)
+        { 
+            e.preventDefault();
+            $('#alert').hide();
+        });
     </script>
   </body>
 </html>
+<?php
+    unset($_SESSION['success']);
+    unset($_SESSION['errors']);

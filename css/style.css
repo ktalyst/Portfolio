@@ -16,6 +16,11 @@ body {
     line-height: 80px;
 }
 
+nav {
+    position: fixed;
+    z-index: 998;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #4DB6AC;
@@ -244,9 +249,10 @@ background: #26A69A;
 }
 
 #skills {
-  background: url('/images/fond.jpg');
+  background: url('../images/fond.jpg');
   height: 590px;
   position: relative;
+  background-size: cover;
 }
 
 .overlay {
@@ -789,14 +795,14 @@ footer.page-footer {
       overflow: hidden;
 }
 
-#experience .row .col.s5:first-child {
+#experience .row .col.block_exp:first-child {
 transform: translateX(-700px);
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
   -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
   transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
-#experience .row .col.s5:not(:first-child) {
+#experience .row .col.block_exp:not(:first-child) {
 transform: translateX(700px);
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
@@ -815,10 +821,10 @@ transform: translateX(700px);
 
 footer.page-footer {
     background-color: #26A69A;
-    width: 100%;
+}
+
+footer.page-footer > .container {
     text-align: center;
-    margin-top: 50px;
-    padding: 40px 0 20px;
 }
 
 .map-wrapper {

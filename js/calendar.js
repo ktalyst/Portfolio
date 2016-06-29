@@ -14,7 +14,21 @@
 
     var calendar = new Object();
     var calendarDispoDays = [
-        new Date(2016, 6, 1)
+        new Date(2016, 6, 1),
+        new Date(2016, 6, 4),
+        new Date(2016, 6, 5),
+        new Date(2016, 6, 6),
+        new Date(2016, 6, 7),
+        new Date(2016, 6, 8),
+        new Date(2016, 6, 19),
+        new Date(2016, 6, 20),
+        new Date(2016, 6, 21),
+        new Date(2016, 6, 22),
+        new Date(2016, 6, 25),
+        new Date(2016, 6, 26),
+        new Date(2016, 6, 27),
+        new Date(2016, 6, 28),
+        new Date(2016, 6, 29),
     ];
 
     function dispoCalendar() {
@@ -44,8 +58,8 @@
                     year: ''
                 },
                 limitUp: {
-                    month: '',
-                    year: ''
+                    month: '6',
+                    year: '2016'
                 },
                 limitDown: {
                     month: '',
@@ -129,6 +143,7 @@
                     calendarTbody.empty().append(html);
                 },
                 nextMonth: function () {
+                    console.log(this.active.year, this.limitUp.year, this.active.month, this.limitUp.month);
                     if (!(this.active.year == this.limitUp.year && this.active.month == this.limitUp.month)) {
                         calendarActiveMonthAndYear.addClass('moveup');
                         calendarTbody.addClass('moveright');
@@ -187,20 +202,19 @@
 
             calendar.active.year = calendar.currentYear;
             calendar.active.month = calendar.currentMonth;
-            calendar.limitUp.year = calendar.currentYear + 1;
-            calendar.limitUp.month = calendar.currentMonth;
+/*            calendar.limitUp.year = calendar.currentYear + 1;
+              calendar.limitUp.month = calendar.currentMonth;*/            
             calendar.limitDown.year = calendar.currentYear;
             calendar.limitDown.month = calendar.currentMonth;
             calendar.dispoDays = calendarDispoDays;
 
             calendar.init();
 
-            calendarHtml.on(clickEventType, '.calendar-prev', function () {
-                calendar.prevMonth();
-            });
-
-            calendarHtml.on(clickEventType, '.calendar-next', function () {
+            calendarHtml.on('click', ".calendar-next", function() {
                 calendar.nextMonth();
+            });
+            calendarHtml.on('click', ".calendar-prev", function() {
+                calendar.prevMonth();
             });
         }
     };
